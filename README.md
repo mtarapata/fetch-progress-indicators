@@ -1,9 +1,22 @@
-This repository provides working examples for implementing progress bars and progress indicators with the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API), [Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API), and [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API).
+Examples for showing progress bars and progress indicators for `fetch()`.  Uses the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API), [Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API), and [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API).
+
+<img clear="both" align="left" width="200px" src="https://raw.githubusercontent.com/AnthumChris/fetch-progress-indicators/master/images/logo-streams-300.png" /><br>
+
+
+# Demo
+
+https://fetch-progress.anthum.com/
+
+<br><br>
 
 ### Examples
 * [Fetch](https://fetch-progress.anthum.com/fetch-basic/): A ReadableStream is used to show download progress during a `fetch()` download.
 * [Fetch - Enhanced](https://fetch-progress.anthum.com/fetch-enhanced/): Same as above with robust code for preventing multiple downloads and handling other real-world UI interactions and edge cases.
 * [Service Worker](https://fetch-progress.anthum.com/sw-basic/): A ReadableStream is used in a Service Worker to simulatenously show download progress for the `FetchEvent` of an inline `<img>` tag.  
+
+### Gzip & Content-Encoding Support
+
+- https://github.com/AnthumChris/fetch-progress-indicators/issues/13
 
 ### Browser Support
 The aforementioned APIs are new/expermiental and do not currently work on all browsers. Testing was done with the browsers below:
